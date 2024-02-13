@@ -5,7 +5,7 @@ This is the official repo for the paper "An Element-Wise Weights Aggregation Met
 
 This is the implementation of the paper "An Element-Wise Weights Aggregation Method for Federated Learning". This paper introduces an innovative Element-Wise Weights Aggregation Method for Federated Learning (EWWA-FL) aimed at optimizing learning performance and accelerating convergence speed. Unlike traditional FL approaches, EWWA-FL aggregates local weights to the global model at the level of individual elements, thereby allowing each participating client to make element-wise contributions to the learning process. By taking into account the unique dataset characteristics of each client, EWWA-FL enhances the robustness of the global model to different datasets while also achieving rapid convergence. The method is flexible enough to employ various weighting strategies. Through comprehensive experiments, we demonstrate the advanced capabilities of EWWA-FL, showing significant improvements in both accuracy and convergence speed across a range of backbones and benchmarks.
 
-<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/intro.png"/></div>
+<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/intro.png"width=600/></div>
 
 ## Requirements
 
@@ -23,10 +23,12 @@ tqdm==4.45.0
 
 ## Performance
 
-<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/performance"/></div>
+<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/performance"width=1000/></div>
 
-<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10.png"/></div>
-<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10-non.png"/></div>
+<div align=center>
+    <img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10.png"width=500/>
+    <img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10-non.png"width=500/>
+</div>
 
 ## Citation
 

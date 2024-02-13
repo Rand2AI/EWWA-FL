@@ -1,0 +1,54 @@
+{
+    "AUTHOR": "YI HU, HANCHI REN, CHEN HU, JINGJING DENG and XIANGHUA XIE",
+    "DATA": {
+        "DATA_ROOT": "/home/hans/WorkSpace/Data/",
+        "IMG_SIZE": [],
+        "IS_IID": 1,
+        "TRAIN_DATA": ""
+    },
+    "DEBUG": 0,
+    "DEVICE": {
+        "DEVICE_GPUID": [
+            0
+        ],
+        "DEVICE_TOUSE": "GPU"
+    },
+    "FED": {
+        "CLIENTS_NUM": 3,
+        "CLIENT_EPOCH": 1,
+        "FRACTION": 1,
+        "OPTIMIZER": ""
+    },
+    "METHODS": "",
+    "METHODS_SET": [
+        "Normal",
+        "FedAvg",
+        "FedAdam",
+        "FedAdp"
+    ],
+    "NAME": "FL-adaptive",
+    "NETWORK": {
+        "BACKBONE": "",
+        "LAYER_NUMBER": 0
+    },
+    "OPTIMIZER": {
+        "DECAY": 0.0001,
+        "LEARNING_RATE": 0,
+        "MOMENTUM": 0.9,
+        "OPT_BACKPROP": "sgd",
+        "OPT_BACKPROP_SET": [
+            "sgd",
+            "adam",
+            "rmsprop",
+            "adadelta"
+        ],
+        "SGD_NESTEROV": true
+    },
+    "TRAIN": {
+        "BATCH_SIZE": 0,
+        "FINETUNE": false,
+        "ROUNDS": 0,
+        "SAVE_ROOT": "/home/hans/WorkSpace/Data/Models",
+        "WEIGHT_TOLOAD": ""
+    }
+}

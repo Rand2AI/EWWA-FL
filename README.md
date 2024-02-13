@@ -23,7 +23,7 @@ tqdm==4.45.0
 
 ## Performance
 
-<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/performance.png"/></div>
+<div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/performance"/></div>
 
 <div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10.png"/></div>
 <div align=center><img src="https://github.com/Rand2AI/EWWA-FL/blob/main/images/32-10-non.png"/></div>

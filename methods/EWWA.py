@@ -21,7 +21,7 @@ from utils import (
 )
 
 
-def FedAdp(config):
+def EWWA(config):
     rounds = config["TRAIN"]["ROUNDS"]
     batchsize = config["TRAIN"]["BATCH_SIZE"]
 
@@ -76,7 +76,7 @@ def FedAdp(config):
 
     model_zero_weihgt = copy.deepcopy(model_global)
 
-    fedadp_obj = FedAdpObj(
+    EWWA_obj = EWWAObj(
         model_zero_weihgt.apply(weight_zero_init).state_dict(),
         config["FED"]["OPTIMIZER"],
     )
@@ -156,8 +156,8 @@ def FedAdp(config):
             acc_locals.append(acc_local)
 
         # weight_global_ = fedavg_weight(weight_locals)
-        fedadp_obj.t = rd
-        weight_global, percent_layer_wise = fedadp_obj.fedadp_weight(
+        EWWA_obj.t = rd
+        weight_global, percent_layer_wise = EWWA_obj.EWWA_weight(
             weight_global, weight_locals
         )
         model_global.load_state_dict(weight_global)
@@ -198,7 +198,7 @@ def FedAdp(config):
         )
 
 
-class FedAdpObj(object):
+class EWWAObj(object):
     def __init__(
         self,
         m_zero,
@@ -286,7 +286,7 @@ class FedAdpObj(object):
             )
         return result
 
-    def fedadp_weight(self, w, w_list):
+    def EWWA_weight(self, w, w_list):
         g_hat = []
         for wi in w_list:
             g = copy.deepcopy(wi)

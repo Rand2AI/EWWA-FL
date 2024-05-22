@@ -13,7 +13,7 @@ if __name__ == "__main__":
         "-m",
         type=str,
         default="FedAdp",
-        help="Normal, FedAvg, FedAdp",
+        help="Normal, FedAvg, EWWA",
     )
     parser.add_argument(
         "--optimizer",

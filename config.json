@@ -24,9 +24,8 @@
         "Normal",
         "FedAvg",
         "FedAdam",
-        "FedAdp"
+        "EWWA"
     ],
-    "NAME": "FL-adaptive",
     "NETWORK": {
         "BACKBONE": "",
         "LAYER_NUMBER": 0
